@@ -19,7 +19,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border-radius: 100px;
-    padding: 5px 10%;
+    padding: 0px 10%;
     height: 120px;
     background: linear-gradient(270deg, #000000, #2c2c2c, #000000);
     background-size: 600% 600%;
@@ -59,4 +59,4 @@ a{
 
 a:hover {
     transform: scale(1.2);
-}
+}   
