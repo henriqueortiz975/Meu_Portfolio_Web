@@ -13,11 +13,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10%;
-  height: 120px;
   background: linear-gradient(270deg, #000000, #2c2c2c, #000000);
   background-size: 600% 600%;
   animation: animarFundo 8s ease infinite;
+}
+
+.titulo{
+  padding-right: 100px;
 }
 
 @keyframes animarFundo {
@@ -29,7 +31,7 @@ header {
 nav ul {
   display: flex;
   list-style: none;
-  padding: 0;
+  margin-right: 100px;
 }
 
 nav li {
@@ -54,10 +56,17 @@ h2 {
   margin-bottom: 20px;
 }
 
-img {
+.github {
   width: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.Pessoal{
+  width: 110px;
+  border-radius: 90px;
+  margin-left: 25px;
+  margin-top: 3px;
 }
 
 .cards {
