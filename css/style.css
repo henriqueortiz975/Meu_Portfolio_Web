@@ -1,62 +1,113 @@
 body {
-    background-image: url("https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/nationalgeographic1440125.webp?w=760&h=1143");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0 5%;
-    text-align: left;
-    height: 120px;
-    background: linear-gradient(270deg, #262c7c, #7a2d9e, #7223a0);
-    background-size: 600% 600%;
-    animation: animarFundo 5s ease infinite;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: left;
+  height: 120px;
+  background: linear-gradient(270deg, #262c7c, #7a2d9e, #7223a0);
+  background-size: 600% 600%;
+  animation: animarFundo 5s ease infinite;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 100px;
-    padding: 0px 10%;
-    height: 120px;
-    background: linear-gradient(270deg, #000000, #2c2c2c, #000000);
-    background-size: 600% 600%;
-    animation: animarFundo 8s ease infinite;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10%;
+  height: 120px;
+  background: linear-gradient(270deg, #000000, #2c2c2c, #000000);
+  background-size: 600% 600%;
+  animation: animarFundo 8s ease infinite;
 }
 
 @keyframes animarFundo {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
 }
 
-ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
 }
 
-li{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
+nav li {
+  margin-left: 20px;
 }
 
-a{
-    color: white; 
-    transition: transform 0.3s ease;
+a {
+  color: white;
+  transition: 0.3s;
 }
 
 a:hover {
-    transform: scale(1.2);
-}   
+    color: #00ffff;
+    transform: scale(1.1);
+}
+
+section {
+  padding: 40px 10%;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.fundo{
+  background: #000000aa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+  transition: 0.3s;
+  
+}
+
+.sobre{
+  background: #000000aa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.fundo:hover {
+  transform: scale(1.05);
+  background: #ffffff22;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000000cc;
+}
+
+hr {
+  border: 1px solid #ffffff33;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #663acc;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4e00cc;
+}
